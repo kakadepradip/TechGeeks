@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLoginScreen"
+    tools:context=".NewRegistration">
+
+    <TextView
+        android:id="@+id/tvCreateNewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Create New Account"
+        android:textColor="#ffff00"
+        android:textSize="45dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCreateNewAccount"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etNewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Name"
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/etNewMobileNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Mobile Number"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/etNewEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Email"
+            android:textSize="25dp" />
+        <EditText
+            android:id="@+id/etnewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/etNewNickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Nick Name For Password Recovery"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNewRegister"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llName"
+        android:layout_centerInParent="true"
+        android:background="#FF1493"
+        android:text="register"
+        android:layout_marginTop="55dp"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>
